@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Oooh what's this?</title>
+  <link rel='stylesheet'
+    href='https://fonts.googleapis.com/css2?family=Short+Stack&amp;family=Homemade+Apple&amp;display=swap'>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+
+
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+      background-color: #b3ecf1;
+    }
+
+    .paper {
+      background-image: url("images/peper.jpg");
+      background-size: 900px;
+      background-position: center center;
+      padding: 20px 100px;
+      /*  min-width: 800px; */
+
+      transform: rotateZ(-5deg);
+      box-shadow: 1px 15px 20px 0px rgba(0, 0, 0, 0.5);
+
+      position: absolute;
+    }
+
+    .paper.heart {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      padding: 0;
+      border-radius: 50%;
+    }
+
+    .paper.image {
+      padding: 10px;
+    }
+
+    .paper.image p {
+      font-size: 50px;
+    }
+
+    img {
+      max-height: 400px;
+      width: 100%;
+      user-select: none;
+    }
+
+    .paper.heart::after {
+      content: "";
+      background-image: url('images/heart.gif');
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-size: 200px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      opacity: 0.6;
+    }
+
+    p {
+      font-family: 'Zeyada';
+      font-size: 60px;
+      color: rgb(0, 0, 100);
+      opacity: 0.75;
+      user-select: none;
+
+      box-shadow: 2px 1.5px 1px rgba(0, 0, 105, 0.9);
+      text-shadow: 2px 1.5px 1px rgba(0, 0, 105, 0.9);
+    }
+  </style>
+
+</head>
+
+<body>
+  <p><a href="doyouwannagooutwithme.html">click me</a></p>
+
+
+
+  </div>
+
+
+  <div class="paper image">
+    <p> So yeah, I know now what I want. </p>
+    <p>To be with you. Always. </p>
+
+  </div>
+  <div class="paper">
+    <p>And if you say yes, I promise<br>I'll give it my 100%. Not any casual promise, no. <br>Actual commitment,
+      like it should be.</p>
+  </div>
+
+  <div class="paper">
+    <p>But I want you. By my side.</p>
+    <img src="images/5.jpg">
+    <p>Literally me</p>
+  </div>
+  <div class="paper image">
+    <p< p="">
+
+    </p<>
+  </div>
+
+  <div class="paper">
+    <p class="p1">I know I'm not special and<br>You might be this caring for everyone</p>
+  </div>
+
+  <div class="paper">
+    <p class="p1">You met me in a very strange time in my life <br>and gave me what I've seem to forgotten. <br>That
+      spark of actual happiness</p>
+  </div>
+
+  <div class="paper image">
+
+    <img src="images/4.jpg">
+    <p>[Me when you have to go] </p>
+
+  </div>
+
+
+
+  <div class="paper red">
+    <p class="p1"> who makes my life </p>
+    <p class="p2">a bit (a lot) more bearable.</p>
+  </div>
+
+  <div class="paper">
+    <p class="p1">You are a really nice person </p>
+    <p class="p1">And I mean it! </p>
+  </div>
+
+  <div class="paper">
+    <p class="p1">Hello, you.<br>Drag the papers to move!</p>
+  </div>
+  <script>
+
+    if ('ontouchstart' in window) {
+      // This is a mobile device
+      // Load mobile-specific script
+      var script = document.createElement('script');
+      script.src = 'mobile.js';
+      document.head.appendChild(script);
+    } else {
+      // This is a PC or a device with a mouse pointer  
+      // Load PC-specific script
+      var script = document.createElement('script');
+      script.src = 'script.js';
+      document.head.appendChild(script);
+    }
+  </script>
+
+</body>
+
+</html>
